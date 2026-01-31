@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #0f2027, #000);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px solid #00f;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 30px rgba(0,255,255,0.4);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.timer {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #00e5ff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.history {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ESTADOS DE TEMPERATURA */
+.frio {
+    border-color: #00bcd4;
+    background: rgba(0, 188, 212, 0.1);
+}
+
+.tibio {
+    border-color: orange;
+    background: rgba(255, 165, 0, 0.15);
+}
+
+.caliente {
+    border-color: red;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.victoria {
+    border-color: #00ff00;
+    background: rgba(0, 255, 0, 0.2);
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 20px #00ff00; }
+    to { box-shadow: 0 0 40px #00ff00; }
+}
+
+.gameover {
+    border-color: #555;
+    background: rgba(0,0,0,0.5);
+}
