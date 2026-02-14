@@ -64,6 +64,7 @@ function setState(state, text) {
     message.textContent = text;
 }
 
+
 // ===== FIN DEL JUEGO =====
 function endGame(win) {
     gameActive = false;
@@ -79,3 +80,4 @@ function endGame(win) {
         message.textContent = `☠️ ¡Tiempo Agotado! El número era ${secretNumber}`;
     }
 }
+//
